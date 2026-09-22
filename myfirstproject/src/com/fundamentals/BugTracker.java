@@ -60,8 +60,8 @@ public class BugTracker {
 	 System.out.println("assignedDeveloper:"+assignedDeveloper);
 	 
  }
- void assignToDeveloper(int bugid, String developername) {
-	     bugid=bugid;
+ void assignToDeveloper(int bugId, String developername) {
+	     bugid=bugId;
 	 
 		 assignedDeveloper=developername;
 		 updatestatus("In Development");
