@@ -7,25 +7,28 @@ public class Bankacc {
 	String branch;
 
 	Bankacc(int accnum, String acchN, int bal, String branch) {
+		this.accnum=accnum;
+		this.acchN=acchN;
+		this.bal=bal;
+		this.branch=branch;
+		
 		System.out.println("parametrized constructor");
 
 	}
+	
 
-	public Bankacc(Bankacc b) {
-		this.accnum = b.accnum;
-		this.acchN = b.acchN;
+
+	public Bankacc(Bankacc b,int accnum,String acchN) {
+		this.bal=b.bal;
+		this.branch=b.branch;
+		this.accnum =accnum;
+		this.acchN = acchN;
 	}
 
 	public static void main(String[] args) {
-		Bankacc b = new Bankacc(21356,"bhagya",3000,"sbi");
-		b.accnum = 2561;
-		b.acchN = "Bhagya";
-		b.bal = 2000;
-		b.branch = "sbi";
+		Bankacc b = new Bankacc(2561,"Bhagya",2000,"sbi");
 		b.display();
-		Bankacc b1 = new Bankacc(b);
-		b1.bal=3000;
-		b1.branch="india";
+		Bankacc b1 = new Bankacc(b,34678,"sam");
 		b1.display();
 
 	}
