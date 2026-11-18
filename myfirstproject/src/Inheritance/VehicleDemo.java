@@ -22,7 +22,7 @@ public class VehicleDemo {
 
         Vehicle v = new Car();
 
-        System.out.println("speed of: " + v.speed);
+        System.out.println("speed of " + v.speed);
         v.display();
     }
 }
